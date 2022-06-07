@@ -1,23 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Pacifico&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box ;
 }    
+$color1: black;
+$color2: rgb(255, 255, 255);
+$color3: rgb(255, 0, 0);
+$color4: rgb(0, 216, 0);
+$color5: rgb(0, 26, 255);
+$color6: rgb(99, 0, 94);
+
+$font1: 'Heebo', sans-serif;
+$font2: 'Pacifico', cursive;
+$font3: 'Roboto Condensed', sans-serif;
+
 body{   
     height: auto;
     width: auto;
-    background-image: linear-gradient(to right bottom, #340544, #340748, #330a4d, #320c51, #310f56, #321358, #34175b, #351a5d, #391f5e, #3d245e, #41285f, #452d60);    font-family: 'Kanit', sans-serif;
-    color: rgb(12, 11, 11);
-}
+    background-color: $color6;
+    color: $color1;
 
 .container{
     min-height: 80px;
     height: 10vh;
+    font-family: $font3;
 }
 
 .casas{
-
     margin: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -37,12 +47,13 @@ body{
     height: 400px;
 }
 h1{
-    color: white;
+    font-family: $font2;
+    color: $color2;
     text-align: center;
     font-size: 50px;
 }
 h2{
-    color: rgb(0, 0, 0);
+    color: $color1;
     font-size: 25px;
 }
 .venta {
@@ -55,13 +66,12 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: $color2;
 }
-.colorfor{
-    color: white;
-}
+
 .menunavbar{
     position: inherit;
+    font-family: $font2;
 }
 @media only screen and (min-width: 700px) and (max-width:1400px) {
 .card-content{
@@ -87,7 +97,7 @@ h2{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: $color2;
     transform: scalex(0);
     transform-origin: bottom right;
     transition: transform 0.6s ease-out;
@@ -95,5 +105,6 @@ h2{
 .underline:hover:after{
     transform:  scaleX(1);
     transform-origin: bottom left;
+}
 }
 }
