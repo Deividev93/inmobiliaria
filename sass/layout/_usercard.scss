@@ -1,0 +1,20 @@
+@mixin movil {
+    @media screen and (max-width: 475px) {
+        @content;
+    }
+}
+.ucard{
+    @extend .card;
+    max-width: 300px;
+    text-align: center;
+    color: map-get($map: $palette, $key:'secondary');
+    >img{
+        @extend .avatar;
+    }
+    >h2{
+        @extend .title, .main-title; 
+    }
+    >small{
+        @extend .small;
+    }
+}

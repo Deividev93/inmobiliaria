@@ -1,0 +1,17 @@
+@mixin movil {
+    @media screen and (max-width: 475px) {
+        @content;
+    }
+}
+.videito{
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    .elvideo{
+        border-radius: 90px;
+        position: inherit;
+        @include movil(){
+            border-radius: 35px;
+        }
+    }
+}

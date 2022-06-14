@@ -1,0 +1,22 @@
+@mixin movil {
+    @media screen and (max-width: 475px) {
+        @content;
+    }
+}
+main{    
+    .t1{
+        .underline{
+            color: $color2;
+            text-align: center;
+            font-family: $font2;
+            @include movil(){
+                font-size: 15px;
+            }
+        }
+    }
+    .row{
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+}    

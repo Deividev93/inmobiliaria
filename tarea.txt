@@ -1,0 +1,4 @@
+aplique mixing, map-get y extend principalmente en el archivo de _usercards.
+aplique meta description y keywords a todo mi sitio, reduje el tamaño de mis imagenes.
+elimine las cards en la pagina de comprar.html ya que estaban hechas al 100% con bootstrap y lo hice solo con flexbox exepto los botones.
+comprobe que no tuviera algun error de sass

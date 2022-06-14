@@ -1,0 +1,12 @@
+@mixin movil {
+    @media screen and (max-width: 475px) {
+        @content;
+    }
+}
+.footer93{
+    font-family: $font2;
+    @include movil(){
+        font-size: 10px;
+    }
+
+}

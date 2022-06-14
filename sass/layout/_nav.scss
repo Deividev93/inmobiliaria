@@ -1,0 +1,24 @@
+@mixin movil {
+    @media screen and (max-width: 475px) {
+        @content;
+    }
+}
+.menunavbar{
+    font-family: $font2;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    ul{
+        @include movil(){
+            direction: rtl;
+        }
+    }
+    .boton{
+        justify-content: flex-start;
+        img{
+            @include movil(){
+                width: 160px;
+            }
+        }
+    }
+}
