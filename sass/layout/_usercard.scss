@@ -12,7 +12,8 @@
         @extend .avatar;
     }
     >h2{
-        @extend .title, .main-title; 
+        @extend .title, .main-title;
+        font-family: $font2;
     }
     >small{
         @extend .small;

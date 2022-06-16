@@ -9,12 +9,6 @@ body {
   background-color: rgb(49, 3, 63);
 }
 
-header {
-  background-color: rgb(0, 0, 0);
-  margin: 0;
-  padding: 15px;
-}
-
 .menunavbar {
   font-family: "Pacifico", cursive;
   display: flex;
@@ -79,6 +73,9 @@ main .row {
   max-width: 300px;
   text-align: center;
 }
+.ucard > h2 {
+  font-family: "Pacifico", cursive;
+}
 .card, .ucard {
   background: rgba(255, 255, 255, 0.694);
   border-radius: 4px;
@@ -115,4 +112,10 @@ main .row {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header, .menunavbar {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 15px;
 }/*# sourceMappingURL=style.css.map */
